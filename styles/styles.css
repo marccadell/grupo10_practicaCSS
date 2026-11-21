@@ -1,5 +1,202 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Raleway', 'Montserrat', Arial, sans-serif;
+}
+
+body {
+    background-color: #fbfbfb;
+    font-size: 14px;
+}
+
+/* Headers and subtitles */
+h1 {
+    font-size: 47px;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+/* Headers and subtitles END */
+
+/* Text & Paragph */
+a {
+    text-decoration: none;
+}
+
+/* Text & Paragph END */
+
+/* List */
+ul,
+li,
+ol {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* List END */
+
+/* Buttons */
+button[type="button"] {
+    padding: 12px 15px;
+    border: 1px solid rgb(108, 108, 235);
+    border-radius: 5px;
+    background-color: blue;
+    color: #fbfbfb;
+    transition: 0.15s;
+}
+
+button[type="button"]:hover {
+    background-color: rgb(5, 5, 202);
+    box-shadow: 0px 3px 14px -1px rgba(0, 0, 0, 0.282);
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+button[type="submit"] {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(11, 201, 11);
+    transition: 0.15s;
+    font-weight: bold;
+    color: #fbfbfb;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(31, 176, 31);
+    box-shadow: 0px 3px 14px -1px rgba(0, 0, 0, 0.282);
+    transform: scale(1.02);
+}
+
+/* Buttons END */
+
+.slide {
+    border: 1px solid blue;
+    display: flex;
+    margin: 10px auto 15px;
+}
+
+.slide .slide-name {
+    border: 1px dashed violet;
+    background-color: aqua;
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px;
+}
+
+.slide .slide-name h1 {
+    border: 1px dashed violet;
+
+    text-align: end;
+    padding: 10px;
+
+}
+
+.slide .slide-name h4 {
+    border: 1px dashed black;
+
+    text-align: end;
+    padding: 10px 20px;
+}
+
+.slide .team {
+    border: 1px dashed violet;
+
+    width: 40%;
+}
+
+.slide .team .team-items {}
+
+.slide .team .team-item {}
+
+.slide .team .team-links {
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.slide .team .team-links .team-links-item {
+    border: 1px solid red;
+}
+
+/* main */
+.container {
+    border: 1px solid red;
+
+    margin: 15px 30px;
+    padding: 10px;
+    min-height: 100dvh !important;
+}
+
+/* main Bootstrap */
+.row {
+    border: 1px dashed blue;
+    background-color: rgb(228, 228, 228);
+    margin: 0 !important;
+    height: 5vh;
+
+
+}
+
+.row .col-md-8 {
+    border: 1px dashed violet;
+
+    /* No modificar padding */
+    padding: 1px 5px 0 0 !important;
+}
+
+/* .col-md-8 .pb-3 */
+.row .pb-3 {
+    border: 1px solid black;
+    min-height: 30vh;
+    height: auto;
+    /* Modificar padding dentro de col-md-8 */
+    padding: 5px 5px 3px !important;
+    margin: 0 0 5px !important;
+}
+
+.row .col-md-5 {
+    border: 1px solid black;
+
+    /* No modificar width */
+    width: 60%;
+}
+
+.row .col-md-3 {
+    border: 1px solid black;
+
+    /* No modificar width */
+    width: 40%;
+
+}
+
+.row .col-md-3,
+.row .col-md-5 {
+    min-height: 10vh;
+    height: auto;
+    /* No modificar padding */
+    padding: 1px 5px !important;
+}
+
+.row .col-md-4 {
+    border: 1px solid black;
+
+    min-height: 40vh;
+    height: auto;
+}
+
+/* Footer */
+.btn-actions {
+    border: 1px solid green;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
