@@ -12,8 +12,6 @@
     /* Botones */
     --color-bg-btn: #e6956a;
     --color-bg-btn-hover: #c07d58;
-    --color-bg-btn-action: ;
-    --color-bg-btn-action-hover: ;
     /* Bordes */
     --color-border: #D6CCC2;
     /* Containers */
@@ -70,9 +68,8 @@ header {
     background-color: var(--color-surface);
 }
 
-header span {
-    padding: 0 20px !important;
-    margin: 0;
+header h4 {
+    margin: 0 0 0 10px;
 }
 
 .header-items {
@@ -104,70 +101,19 @@ header span {
 
 /* Navbar END */
 
-/* Images */
-/*
-.container-img {
-    width: calc(80% - 20px);
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 15px auto 25px;
-}
-
-.container-img-info {
-    text-align: center;
-    padding: 10px 20px;
-}
-
-.container-img-info {
-    text-align: center;
-    padding: 10px 20px;
-}
-
-.slide-img {
-    width: 100%;
-    padding: 10px 10px;
-}*/
-.col-md-4 .container-img:only-child {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-}
-
-.col-md-4 .container-img {
-    background-color: #fcfcfc;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 10px 0;
-    margin: 10px 5px;
-    min-width: 0;
-}
-
-.col-md-4 .container-img-info {
-    text-align: center;
-    padding: 10px 20px;
-}
-
-.col-md-4 .slide-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: fill;
-}
-
-/* Images END */
-
 /* Buttons */
 button[type="button"] {
     padding: 12px 15px;
-    border: 1px solid rgb(108, 108, 235);
+    border: 1px solid var(--color-border);
     border-radius: 5px;
-    background-color: blue;
-    color: #fbfbfb;
+    background-color: var(--color-bg-btn);
+    color: var(--color-text-light);
     transition: 0.15s;
 }
 
 button[type="button"]:hover {
-    background-color: rgb(5, 5, 202);
-    box-shadow: 0px 3px 14px -1px rgba(0, 0, 0, 0.282);
-    color: #ffffff;
+    background-color: var(--color-bg-btn-hover);
+    box-shadow: 0px 3px 14px -1px rgba(0, 0, 0, 0.191);
     transform: scale(1.02);
 }
 
@@ -178,7 +124,7 @@ button[type="submit"] {
     background-color: rgb(11, 201, 11);
     transition: 0.15s;
     font-weight: bold;
-    color: #fbfbfb;
+    color: var(--color-text-light);
 }
 
 button[type="submit"]:hover {
@@ -238,19 +184,38 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .slide .team .team-links .team-links-item {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 10px;
     text-decoration: none;
-    padding: 0 5px;
+    background-color: var(--color-bg-btn);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    transition: ease-out 0.1s;
+}
+
+.slide .team .team-links .team-links-item:hover {
+    background-color: var(--color-bg-btn-hover);
+    box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.191);
+    transform: scale(1.03);
+}
+
+.icon-img {
+    width: 25px;
+    height: 25px;
 }
 
 /* main */
 .container {
     height: auto;
     min-height: auto !important;
-    margin: 15px 30px;
+    margin: 50px 30px;
     padding: 10px 10px;
     border: 1px solid var(--color-border);
     border-radius: 10px;
@@ -314,6 +279,56 @@ button[type="submit"]:hover {
     min-height: auto;
     height: auto;
 }
+
+/* Images */
+/*
+.container-img {
+    width: calc(80% - 20px);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px auto 25px;
+}
+
+.container-img-info {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.container-img-info {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.slide-img {
+    width: 100%;
+    padding: 10px 10px;
+}*/
+.col-md-4 .container-img:only-child {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.col-md-4 .container-img {
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 10px 0;
+    margin: 10px 5px;
+    min-width: 0;
+}
+
+.col-md-4 .container-img-info {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.col-md-4 .slide-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+/* Images END */
 
 /* Footer */
 .btn-actions {
