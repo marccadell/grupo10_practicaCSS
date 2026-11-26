@@ -1,23 +1,93 @@
-<!--  -->
+<!-- 07-html.html | Captura de una página sin estilos y explicación. -->
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>HTML</title>
+    <!-- Falta agregar descripcion -->
+    <!-- Falta agregar favicon.png -->
     <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <a href="nav-slides.html">Menu</a>
+        <h4>Slide 7</h4>
+        <ul class="header-items">
+            <li class="header-item">
+                <a href="index.html">1</a>
+            </li>
+            <li class="header-item">
+                <a href="02-proyecto.html">2</a>
+            </li>
+            <li class="header-item">
+                <a href="03-benchmarking.html">3</a>
+            </li>
+            <li class="header-item">
+                <a href="04-sketch.html">4</a>
+            </li>
+            <li class="header-item">
+                <a href="05-figma-componentes.html">5</a>
+            </li>
+            <li class="header-item">
+                <a href="06-figma-error.html">6</a>
+            </li>
+            <li class="header-item">
+                <a href="07-html.html">7</a>
+            </li>
+            <li class="header-item">
+                <a href="08-figma-a-css.html">8</a>
+            </li>
+            <li class="header-item">
+                <a href="09-css-fragmento.html">9</a>
+            </li>
+            <li class="header-item">
+                <a href="10-dificultades.html">10</a>
+            </li>
+            <li class="header-item">
+                <a href="11-conclusiones.html">11</a>
+            </li>
+        </ul>
     </header>
-    <h1>HTML</h1>
-    <subtitle>Captura de una página sin estilos y
-        explicación</subtitle>
-    <div class="container"></div>
+    <div class="slide">
+        <div class="slide-name">
+            <h1>HTML</h1>
+            <h4><i>Captura de una página sin estilos y
+                    explicación.</i></h4>
+        </div>
+        <div class="team">
+            <ul class="team-items">
+                <li class="team-item"><strong>Práctica 4 IPO: presentación del proyecto con CSS</strong></li>
+                <li class="team-item">GEISI 1</li>
+                <li class="team-item">Marc Adell - Laia Brugarolas - Roger Buendía</li>
+            </ul>
+            <div class="team-links">
+                <a class="team-links-item" href="documents/Práctica 4 IPO presentación del proyecto con CSS.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    Ver Práctica <img class="icon-img" src="images/pdf.png" alt="Icono PDF" />
+                </a>
+                <a class="team-links-item" href="https://github.com/marccadell/grupo10_practicaCSS" target="_blank"
+                    rel="noopener noreferrer">
+                    Ver Repo <img class="icon-img" src="images/github.png" alt="Icono Github" />
+                </a>
+            </div>
+        </div>
+    </div>
 
-    <a href="08-figma-a-css.html">Next Slide</a>
+    <footer class="btn-actions">
+        <a href="06-figma-error.html">
+            <button type="button">Previous Slide</button>
+        </a>
+        <a href="08-figma-a-css.html">
+            <button type="button">Next Slide</button>
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
