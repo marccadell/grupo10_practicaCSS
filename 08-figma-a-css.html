@@ -1,12 +1,12 @@
-<!--  -->
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <!-- Falta agregar descripcion -->
-    <!-- Falta agregar favicon.png -->
+    <title>Slide 8 - De Figma a CSS | TecnoCafé</title>
+    <meta name="description" content="Traducción de la tipografía y paleta de colores de Figma a variables CSS en TecnoCafé.">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
@@ -77,68 +77,49 @@
     <main class="container">
         <div class="row">
             <div class="col-md-8">
-                <div class="pb-3 ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero pretium quam suscipit velit
-                    rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas odio erat mattis vitae tortor
-                    id nec mauris dictum praesent suspendisse.
+                <div class="pb-3">
+                    <p><strong>Traducción de estilos en CSS:</strong> replicamos el sistema de Figma mediante variables en <code>:root</code> para mantener coherencia en toda la web.</p>
+                    <pre class="p-3 bg-light border rounded"><code>:root {
+  --color-primario: #8E442D;    /* Marrón café: botones y activos */
+  --color-fondo: #FFFFFF;       /* Fondo limpio minimalista */
+  --color-secundario: #F7F4F0;  /* Crema suave: bloques y selectores */
+  --color-texto: #1A1A1A;       /* Alto contraste para lectura */
+  --color-error: #E55B51;       /* Alerta: horario no disponible */
+  --color-exito: #4CAF50;       /* Confirmación de pedido */
+  --fuente-base: 'Inter', Arial, sans-serif;
+}
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero pretium quam suscipit velit
-                    rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas odio erat mattis vitae tortor
-                    id nec mauris dictum praesent suspendisse.
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero pretium quam suscipit velit
-                    rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas odio erat mattis vitae tortor
-                    id nec mauris dictum praesent suspendisse.
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero pretium quam suscipit velit
-                    rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas odio erat mattis vitae tortor
-                    id nec mauris dictum praesent suspendisse.
+body {
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}</code></pre>
                 </div>
                 <div class="row row-2">
-                    <div class="col-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero pretium quam
-                        suscipit velit rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas odio erat
-                        it velit rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero pretium quam suscipit velit
-                        rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas odio erat mattis vitae tortor
-                        id nec mauris dictum praesent suspendisse.
-
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero pretium quam suscipit velit
-                        rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas odio erat mattis vitae tortor
-                        id nec mauris dictum praesent suspendisse.
-
-
+                    <div class="col-md-6">
+                        <h5><strong>Tipografía</strong></h5>
+                        <ul>
+                            <li><strong>Fuente sans-serif (Inter):</strong> elegida por su alta legibilidad en pantallas móviles y en proyector.</li>
+                            <li><strong>Jerarquía clara:</strong> contraste de pesos y tamaños para destacar títulos, precios y acciones principales.</li>
+                        </ul>
                     </div>
-                    <div class="col-md-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero pretium quam suscipit velit
-                        rutrum. Sem erat ex accumsan quis dolor. Convallis blandit egestas odio erat mattis vitae tortor
-                        id nec mauris dictum praesent suspendisse.
+                    <div class="col-md-6">
+                        <h5><strong>Paleta de colores</strong></h5>
+                        <ul>
+                            <li><strong>Identidad y minimalismo:</strong> marrón café (<code>#8E442D</code>) para los CTA sobre fondos neutros (<code>#FFFFFF</code> y <code>#F7F4F0</code>).</li>
+                            <li><strong>Colores semánticos:</strong> verde para confirmar el pedido y rojo para avisar de errores de horario.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="container-img">
-                    <img src="https://placehold.co/1080x1080" class="slide-img" alt="placeholder" />
+                    <img src="images/paleta-figma.png" class="slide-img"
+                        alt="Paleta de colores y estilos tipográficos utilizados en el diseño de Figma de TecnoCafé" />
                     <div class="container-img-info">
-                        <p>Foto Slide</p>
+                        <p>Paleta y tipografía en Figma</p>
                     </div>
                 </div>
-                <!--
-                TERCERA FOTO
-                <div class="container-img">
-                    <img src="https://placehold.co/1080x650" class="slide-img" alt="placeholder" />
-                    <div class="container-img-info">
-                        <p>Foto Slide</p>
-                    </div>
-                </div>
-                ---
-                CUARTA FOTO
-                <div class="container-img">
-                    <img src="https://placehold.co/1080x650" class="slide-img" alt="placeholder" />
-                    <div class="container-img-info">
-                        <p>Foto Slide</p>
-                    </div>
-                </div>
-                -->
             </div>
         </div>
     </main>
