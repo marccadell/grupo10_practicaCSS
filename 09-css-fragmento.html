@@ -1,22 +1,135 @@
-<!--  -->
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Slide 9 - Fragmento de CSS | TecnoCafé</title>
+    <meta name="description" content="Fragmento de 10 líneas de CSS, selector utilizado y aplicación HTML en TecnoCafé.">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <a href="nav-slides.html">Menu</a>
+        <h4>Slide 9</h4>
+        <ul class="header-items">
+            <li class="header-item">
+                <a href="index.html">1</a>
+            </li>
+            <li class="header-item">
+                <a href="02-proyecto.html">2</a>
+            </li>
+            <li class="header-item">
+                <a href="03-benchmarking.html">3</a>
+            </li>
+            <li class="header-item">
+                <a href="04-sketch.html">4</a>
+            </li>
+            <li class="header-item">
+                <a href="05-figma-componentes.html">5</a>
+            </li>
+            <li class="header-item">
+                <a href="06-figma-error.html">6</a>
+            </li>
+            <li class="header-item">
+                <a href="07-html.html">7</a>
+            </li>
+            <li class="header-item">
+                <a href="08-figma-a-css.html">8</a>
+            </li>
+            <li class="header-item">
+                <a href="09-css-fragmento.html">9</a>
+            </li>
+            <li class="header-item">
+                <a href="10-dificultades.html">10</a>
+            </li>
+            <li class="header-item">
+                <a href="11-conclusiones.html">11</a>
+            </li>
+        </ul>
     </header>
-    <h1>Fragmento CSS</h1>
-    <subtitle>Un fragmento CSS (10 lineas) de un elemento concreto de nuestra página.</subtitle>
-    <div class="container"></div>
+    <div class="slide">
+        <div class="slide-name">
+            <h1>Fragmento de CSS</h1>
+            <h4><i>Bloque de 10 líneas para un componente clave</i></h4>
+        </div>
+        <div class="team">
+            <ul class="team-items">
+                <li class="team-item"><strong>Práctica 4 IPO: presentación del proyecto con CSS</strong></li>
+                <li class="team-item">GEISI 1</li>
+                <li class="team-item">Marc Adell - Laia Brugarolas - Roger Buendía</li>
+            </ul>
+            <div class="team-links">
+                <a class="team-links-item" href="documents/Práctica 4 IPO presentación del proyecto con CSS.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    Ver Práctica <img class="icon-img" src="images/pdf.png" alt="Icono PDF" />
+                </a>
+                <a class="team-links-item" href="https://github.com/marccadell/grupo10_practicaCSS" target="_blank"
+                    rel="noopener noreferrer">
+                    Ver Repo <img class="icon-img" src="images/github.png" alt="Icono Github" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="pb-3">
+                    <p><strong>Elemento estilizado:</strong> Tarjeta individual de producto del catálogo de TecnoCafé (Café, Croissant, Bocadillo, Zumo).</p>
+                    <pre class="p-3 bg-light border rounded"><code>.producto-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}</code></pre>
+                </div>
+                <div class="row row-2">
+                    <div class="col-md-6">
+                        <h5><strong>Selector utilizado</strong></h5>
+                        <ul>
+                            <li>Usamos un <strong>selector de clase</strong> (<code>.producto-card</code>) y no un ID.</li>
+                            <li>Al ser un componente repetitivo, la clase permite reutilizar el mismo estilo en todos los productos del menú.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5><strong>Aplicación en el HTML</strong></h5>
+                        <ul>
+                            <li>Se aplica a cada elemento <code>&lt;li class="producto-card"&gt;</code> dentro de la lista del catálogo.</li>
+                            <li><code>display: flex</code> y <code>gap: 8px</code> traducen directamente el <em>Auto Layout</em> de Figma.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-img">
+                    <img src="images/tarjeta-producto.png" class="slide-img"
+                        alt="Tarjeta del producto Croissant con imagen, precio y botón de añadir al carrito" />
+                    <div class="container-img-info">
+                        <p>Componente tarjeta de producto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="btn-actions">
+        <a href="08-figma-a-css.html">
+            <button type="button">Previous Slide</button>
+        </a>
+        <a href="10-dificultades.html">
+            <button type="button">Next Slide</button>
+        </a>
+    </footer>
 
-    <a href="10-dificultades.html">Next Slide</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

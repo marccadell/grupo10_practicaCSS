@@ -1,22 +1,130 @@
-<!--  -->
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Slide 11 - Conclusiones | TecnoCafé</title>
+    <meta name="description" content="Resumen del proceso completo de TecnoCafé desde el benchmarking hasta el CSS y logros alcanzados.">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <a href="nav-slides.html">Menu</a>
+        <h4>Slide 11</h4>
+        <ul class="header-items">
+            <li class="header-item">
+                <a href="index.html">1</a>
+            </li>
+            <li class="header-item">
+                <a href="02-proyecto.html">2</a>
+            </li>
+            <li class="header-item">
+                <a href="03-benchmarking.html">3</a>
+            </li>
+            <li class="header-item">
+                <a href="04-sketch.html">4</a>
+            </li>
+            <li class="header-item">
+                <a href="05-figma-componentes.html">5</a>
+            </li>
+            <li class="header-item">
+                <a href="06-figma-error.html">6</a>
+            </li>
+            <li class="header-item">
+                <a href="07-html.html">7</a>
+            </li>
+            <li class="header-item">
+                <a href="08-figma-a-css.html">8</a>
+            </li>
+            <li class="header-item">
+                <a href="09-css-fragmento.html">9</a>
+            </li>
+            <li class="header-item">
+                <a href="10-dificultades.html">10</a>
+            </li>
+            <li class="header-item">
+                <a href="11-conclusiones.html">11</a>
+            </li>
+        </ul>
     </header>
-    <h1>Conclusiones</h1>
-    <subtitle>Resumen del proceso.</subtitle>
-    <div class="container"></div>
+    <div class="slide">
+        <div class="slide-name">
+            <h1>Conclusiones</h1>
+            <h4><i>Resumen del proceso y aspectos destacados</i></h4>
+        </div>
+        <div class="team">
+            <ul class="team-items">
+                <li class="team-item"><strong>Práctica 4 IPO: presentación del proyecto con CSS</strong></li>
+                <li class="team-item">GEISI 1</li>
+                <li class="team-item">Marc Adell - Laia Brugarolas - Roger Buendía</li>
+            </ul>
+            <div class="team-links">
+                <a class="team-links-item" href="documents/Práctica 4 IPO presentación del proyecto con CSS.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    Ver Práctica <img class="icon-img" src="images/pdf.png" alt="Icono PDF" />
+                </a>
+                <a class="team-links-item" href="https://github.com/marccadell/grupo10_practicaCSS" target="_blank"
+                    rel="noopener noreferrer">
+                    Ver Repo <img class="icon-img" src="images/github.png" alt="Icono Github" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="pb-3">
+                    <h5><strong>Recorrido del proyecto (del benchmarking al CSS)</strong></h5>
+                    <p>
+                        Partimos del análisis PACT y el benchmarking de Glovo, Burger King y Deliverum para detectar
+                        fricciones reales. Tras diseñar el <em>sketch</em> y aplicar la evaluación heurística de Nielsen,
+                        construimos un prototipo modular en Figma, lo estructuramos en HTML semántico y lo estilizamos con CSS.
+                    </p>
+                </div>
+                <div class="row row-2">
+                    <div class="col-md-6">
+                        <h5><strong>Experiencia de usuario</strong></h5>
+                        <ul>
+                            <li><strong>Se consiguió con éxito</strong> resolver la comanda y el pago en solo 4 pantallas sin pasos innecesarios.</li>
+                            <li><strong>Se consiguió con éxito</strong> garantizar la visibilidad del estado mediante la confirmación y el código QR.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5><strong>Diseño y desarrollo</strong></h5>
+                        <ul>
+                            <li><strong>Se consiguió con éxito</strong> mantener la coherencia visual entre componentes de Figma y variables CSS.</li>
+                            <li><strong>Se consiguió con éxito</strong> crear un prototipo accesible y orientado a descansos cortos en el campus.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-img">
+                    <img src="images/evolucion-proyecto.png" class="slide-img"
+                        alt="Evolución del proyecto TecnoCafé desde el sketch y Figma hasta el resultado en HTML y CSS" />
+                    <div class="container-img-info">
+                        <p>Evolución completa: del sketch al CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="btn-actions">
+        <a href="10-dificultades.html">
+            <button type="button">Previous Slide</button>
+        </a>
+        <a href="index.html">
+            <button type="button">Reiniciar Presentación</button>
+        </a>
+    </footer>
 
-    <a href="index.html"><button type="submit">Reiniciar Presentación</button></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,22 +1,130 @@
-<!--  -->
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Slide 10 - Dificultades | TecnoCafé</title>
+    <meta name="description" content="Retos principales, fallos detectados, soluciones aplicadas y mejoras futuras de TecnoCafé.">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <a href="nav-slides.html">Menu</a>
+        <h4>Slide 10</h4>
+        <ul class="header-items">
+            <li class="header-item">
+                <a href="index.html">1</a>
+            </li>
+            <li class="header-item">
+                <a href="02-proyecto.html">2</a>
+            </li>
+            <li class="header-item">
+                <a href="03-benchmarking.html">3</a>
+            </li>
+            <li class="header-item">
+                <a href="04-sketch.html">4</a>
+            </li>
+            <li class="header-item">
+                <a href="05-figma-componentes.html">5</a>
+            </li>
+            <li class="header-item">
+                <a href="06-figma-error.html">6</a>
+            </li>
+            <li class="header-item">
+                <a href="07-html.html">7</a>
+            </li>
+            <li class="header-item">
+                <a href="08-figma-a-css.html">8</a>
+            </li>
+            <li class="header-item">
+                <a href="09-css-fragmento.html">9</a>
+            </li>
+            <li class="header-item">
+                <a href="10-dificultades.html">10</a>
+            </li>
+            <li class="header-item">
+                <a href="11-conclusiones.html">11</a>
+            </li>
+        </ul>
     </header>
-    <h1>Dificultades</h1>
-    <subtitle>Cuál ha sido la parte más desafiante del proyecto?</subtitle>
-    <div class="container"></div>
+    <div class="slide">
+        <div class="slide-name">
+            <h1>Dificultades</h1>
+            <h4><i>Retos del proyecto, soluciones y aprendizajes</i></h4>
+        </div>
+        <div class="team">
+            <ul class="team-items">
+                <li class="team-item"><strong>Práctica 4 IPO: presentación del proyecto con CSS</strong></li>
+                <li class="team-item">GEISI 1</li>
+                <li class="team-item">Marc Adell - Laia Brugarolas - Roger Buendía</li>
+            </ul>
+            <div class="team-links">
+                <a class="team-links-item" href="documents/Práctica 4 IPO presentación del proyecto con CSS.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    Ver Práctica <img class="icon-img" src="images/pdf.png" alt="Icono PDF" />
+                </a>
+                <a class="team-links-item" href="https://github.com/marccadell/grupo10_practicaCSS" target="_blank"
+                    rel="noopener noreferrer">
+                    Ver Repo <img class="icon-img" src="images/github.png" alt="Icono Github" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="pb-3">
+                    <h5><strong>La parte más desafiante</strong></h5>
+                    <p>
+                        Construir toda la página <em>Design</em> de Figma utilizando únicamente instancias de componentes
+                        con <em>Auto Layout</em> (sin elementos sueltos) y mantener esa misma fidelidad al trasladar la
+                        interfaz móvil a HTML puro y luego a CSS.
+                    </p>
+                </div>
+                <div class="row row-2">
+                    <div class="col-md-6">
+                        <h5><strong>Qué falló y cómo lo resolvimos</strong></h5>
+                        <ul>
+                            <li><strong>Error de usabilidad:</strong> pulsar «Continuar al pago» sin elegir hora bloqueaba el paso sin aviso claro. <em>Solución:</em> añadimos alerta roja y validación de franja horaria.</li>
+                            <li><strong>Rutas en HTML:</strong> imágenes y enlaces rotos al mover el proyecto. <em>Solución:</em> estandarizamos rutas relativas y nombres en minúsculas sin tildes.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5><strong>Qué haríamos de otra manera</strong></h5>
+                        <ul>
+                            <li>Definir una guía de estilos, variables y nomenclatura cerrada desde el primer día.</li>
+                            <li>Realizar pruebas de usabilidad con estudiantes reales del campus antes de pasar a código.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-img">
+                    <img src="images/error-horario.png" class="slide-img"
+                        alt="Pantalla de carrito en Figma mostrando el mensaje de error cuando el horario de recogida no está disponible" />
+                    <div class="container-img-info">
+                        <p>Estado de error detectado y resuelto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="btn-actions">
+        <a href="09-css-fragmento.html">
+            <button type="button">Previous Slide</button>
+        </a>
+        <a href="11-conclusiones.html">
+            <button type="button">Next Slide</button>
+        </a>
+    </footer>
 
-    <a href="11-conclusiones.html">Next Slide</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
