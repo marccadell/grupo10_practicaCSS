@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide 7 - Prototipo en HTML | TecnoCafé</title>
-    <meta name="description" content="Captura del prototipo HTML sin estilos y explicación de la estructura semántica de TecnoCafé.">
+    <title>Prototipo en HTML | TecnoCafé</title>
+    <meta name="description"
+        content="Captura del prototipo HTML sin estilos y explicación de la estructura semántica de TecnoCafé.">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -78,37 +79,49 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="pb-3">
-                    <p><strong>Fragmento relevante (<code>index.html</code>):</strong> estructura semántica base antes de aplicar CSS.</p>
-                    <pre class="p-3 bg-light border rounded"><code>&lt;!-- Figma: 01_Inicio --&gt;
-&lt;header&gt;
-  &lt;h1&gt;TecnoCafé&lt;/h1&gt;
-  &lt;label for="buscar"&gt;Buscar productos:&lt;/label&gt;
-  &lt;input id="buscar" type="search" placeholder="Buscar productos..." /&gt;
-&lt;/header&gt;
-&lt;main&gt;
-  &lt;h2&gt;Productos destacados&lt;/h2&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;img src="images/croissant.jpg" alt="Croissant de mantequilla" width="150" /&gt;
-      &lt;h3&gt;Croissant - 1,80 €&lt;/h3&gt;
-      &lt;a href="02_detalle.html"&gt;Ver producto&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/main&gt;</code></pre>
+                    <h4>Fragmento relevante <code>index.html</code></h4>
+                    <p>Estructura semántica base antes
+                        de aplicar CSS.</p>
+                    <pre class="code-example">
+                        <code>
+    &lt;!-- Figma: 01_Inicio --&gt;
+    &lt;header&gt;
+    &lt;h1&gt;TecnoCafé&lt;/h1&gt;
+    &lt;label for="buscar"&gt;Buscar productos:&lt;/label&gt;
+    &lt;input id="buscar" type="search" placeholder="Buscar productos..." /&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+    &lt;h2&gt;Productos destacados&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+        &lt;img src="images/croissant.jpg" alt="Croissant de mantequilla" width="150" /&gt;
+        &lt;h3&gt;Croissant - 1,80 €&lt;/h3&gt;
+        &lt;a href="02_detalle.html"&gt;Ver producto&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/main&gt;
+                        </code>
+                    </pre>
                 </div>
                 <div class="row row-2">
                     <div class="col-md-6">
-                        <h5><strong>Semántica y trazabilidad</strong></h5>
+                        <h4>Semántica y trazabilidad</h4>
                         <ul>
-                            <li>Comentario inicial (<code>&lt;!-- Figma: 01_Inicio --&gt;</code>) que enlaza el código con el prototipo.</li>
-                            <li>Etiquetas semánticas (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;ul&gt;</code>) y jerarquía estricta con un único <code>&lt;h1&gt;</code>.</li>
+                            <li>Comentario inicial (<code>&lt;!-- Figma: 01_Inicio --&gt;</code>) que enlaza el código
+                                con el prototipo.</li>
+                            <li>Etiquetas semánticas (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                                <code>&lt;ul&gt;</code>) y jerarquía estricta con un único <code>&lt;h1&gt;</code>.
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h5><strong>Accesibilidad y navegación</strong></h5>
+                        <h4>Accesibilidad y navegación</h4>
                         <ul>
-                            <li>Buscador accesible mediante <code>&lt;label for&gt;</code> e imágenes con atributo <code>alt</code> descriptivo.</li>
-                            <li>Flujo completo navegable solo con enlaces relativos (<code>&lt;a href&gt;</code>) sin CSS ni JavaScript.</li>
+                            <li>Buscador accesible mediante <code>&lt;label for&gt;</code> e imágenes con atributo
+                                <code>alt</code> descriptivo.
+                            </li>
+                            <li>Flujo completo navegable solo con enlaces relativos (<code>&lt;a href&gt;</code>) sin
+                                CSS ni JavaScript.</li>
                         </ul>
                     </div>
                 </div>
@@ -118,7 +131,7 @@
                     <img src="images/html-sin-estilos.png" class="slide-img"
                         alt="Captura de la página de inicio de TecnoCafé en HTML sin estilos CSS mostrando el título, buscador y productos" />
                     <div class="container-img-info">
-                        <p>Página de inicio en HTML sin CSS</p>
+                        <p>Página Index.html sin CSS</p>
                     </div>
                 </div>
             </div>

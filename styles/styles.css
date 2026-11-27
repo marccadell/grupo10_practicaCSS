@@ -6,9 +6,11 @@
     --color-text: #302923;
     --color-text-secondary: #57483F;
     --color-text-light: #FFFFFF;
+    --color-text-green: #14f318dd;
     /* Fondo */
     --color-bg: #F5EBE0;
     --color-bg-secondary: #EDEDE9;
+    --color-bg-code: #111111c6;
     /* Botones */
     --color-bg-btn: #e6956a;
     --color-bg-btn-hover: #c07d58;
@@ -29,7 +31,6 @@
 body {
     position: relative;
     isolation: isolate;
-    font-size: 14px;
 }
 
 body::before {
@@ -48,13 +49,17 @@ body::before {
 
 /* Headers and subtitles */
 h1 {
-    font-size: 47px;
+    font-size: 40px;
 }
 
 h1,
 h2,
 h4 {
-    font-weight: bold;
+    font-weight: bold !important;
+}
+
+h4 {
+    font-size: 24px;
 }
 
 /* Headers and subtitles END */
@@ -65,6 +70,9 @@ a {
 }
 
 /* Text & Paragph END */
+p {
+    font-size: 18px;
+}
 
 /* List */
 ul,
@@ -72,6 +80,8 @@ li,
 ol {
     text-decoration: none;
     list-style: none;
+    font-size: 18px;
+    padding-left: 0 !important;
 }
 
 /* List END */
@@ -86,6 +96,7 @@ header {
 
 header h4 {
     margin: 0 0 0 10px;
+    font-weight: 400 !important;
 }
 
 .header-items {
@@ -115,7 +126,7 @@ header h4 {
     text-decoration: none;
     padding: 25px 15px;
     color: var(--color-text-light);
-
+    font-size: 24px;
 }
 
 /* Navbar END */
@@ -159,8 +170,6 @@ button[type="submit"]:hover {
     margin: 0px auto 15px;
     background-color: var(--color-bg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-size: 24px;
-
 }
 
 .slide .slide-name {
@@ -176,7 +185,6 @@ button[type="submit"]:hover {
     text-align: end;
     padding: 10px;
     font-weight: bold;
-
 }
 
 .slide .slide-name h4 {
@@ -196,10 +204,17 @@ button[type="submit"]:hover {
 }
 
 .slide .team .team-items {
-    padding: 15px 15px;
+    padding: 15px 15px !important;
 }
 
-.slide .team .team-item {}
+.slide .team .team-item:nth-child(1) {
+    font-size: 24px;
+}
+
+.slide .team .team-item:nth-child(2),
+.slide .team .team-item:nth-child(3) {
+    font-size: 18px;
+}
 
 .slide .team .team-links {
     display: flex;
@@ -261,7 +276,8 @@ button[type="submit"]:hover {
 
 .row .col-md-8 {
     /* No modificar padding */
-    padding: 1px 0 0 0 !important;
+    padding: 1px 10px 0 0 !important;
+    border: 1px solid red;
 
     height: auto;
     min-height: auto !important;
@@ -273,7 +289,20 @@ button[type="submit"]:hover {
     /* Modificar padding dentro de col-md-8 */
     padding: 5px 5px 3px;
     margin: 0 0 5px;
-    font-size: 21px;
+}
+
+
+.row .pb-3 .code-example {
+    background-color: var(--color-bg-code);
+    color: var(--color-text-green);
+    width: 92%;
+    margin: 5px 10px 0;
+    padding-right: 15px;
+    overflow: auto;
+}
+
+.row .pb-3 .code-example code {
+    font-size: 16px;
 }
 
 .row .col-md-5 {
@@ -291,16 +320,32 @@ button[type="submit"]:hover {
 .row .col-md-5 {
     height: auto;
     /* No modificar padding */
-    padding: 1px 5px;
+    padding: 1px 5px 3px;
 }
 
 .row .col-md-4 {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: repeat(2, max-content);
     gap: 12px;
     min-height: auto;
     height: auto;
+
+    border: 1px dashed blue;
+}
+
+
+/* Para cuando haya dos imagenes unicamente, formato 1 columna 2 filas */
+.row .col-md-4:has(> .container-img:nth-child(2):last-child) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: repeat(2, max-content) !important;
+    gap: 20px;
+}
+
+.row .col-md-4:has(> .container-img:nth-child(2):last-child) .container-img {
+    width: 100%;
+    margin: 0;
+    justify-self: stretch;
 }
 
 /* Images */
@@ -337,6 +382,11 @@ button[type="submit"]:hover {
     padding: 10px 10px 0;
     margin: 10px 5px;
     min-width: 0;
+}
+
+.col-md-4 .container-img img {
+    object-fit: cover;
+    border-radius: 2px;
 }
 
 .col-md-4 .container-img-info {
