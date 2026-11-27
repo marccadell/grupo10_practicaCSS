@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide 9 - Fragmento de CSS | TecnoCafé</title>
-    <meta name="description" content="Fragmento de 10 líneas de CSS, selector utilizado y aplicación HTML en TecnoCafé.">
+    <title>Fragmento de CSS | TecnoCafé</title>
+    <meta name="description"
+        content="Fragmento de 10 líneas de CSS, selector utilizado y aplicación HTML en TecnoCafé.">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -78,31 +79,41 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="pb-3">
-                    <p><strong>Elemento estilizado:</strong> Tarjeta individual de producto del catálogo de TecnoCafé (Café, Croissant, Bocadillo, Zumo).</p>
-                    <pre class="p-3 bg-light border rounded"><code>.producto-card {
-  background-color: #FFFFFF;
-  border: 1px solid #EAEAEA;
-  border-radius: 16px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}</code></pre>
+                    <h4>Elemento con clase aplicada y estilo</h4>
+                    <p>Product Card del catálogo de TecnoCafé.</p>
+                    <pre class="code-example">
+                        <code>
+    /* Contenedor Card */
+    .producto-card {
+        background-color: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 16px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+                        </code>
+                    </pre>
                 </div>
                 <div class="row row-2">
                     <div class="col-md-6">
-                        <h5><strong>Selector utilizado</strong></h5>
+                        <h4>Atributo utilizado</h4>
                         <ul>
-                            <li>Usamos un <strong>selector de clase</strong> (<code>.producto-card</code>) y no un ID.</li>
-                            <li>Al ser un componente repetitivo, la clase permite reutilizar el mismo estilo en todos los productos del menú.</li>
+                            <li>Usamos un elemento <strong>class</strong> (<code>.producto-card</code>),
+                                atributo global en
+                                HTML y no un ID o etiqueta (tag).
+                            </li>
+                            <li>Al ser una clase reutilizable, permite aplicar el mismo estilo en todos
+                                los productos.</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h5><strong>Aplicación en el HTML</strong></h5>
+                        <h4>Aplicación en el HTML</h4>
                         <ul>
-                            <li>Se aplica a cada elemento <code>&lt;li class="producto-card"&gt;</code> dentro de la lista del catálogo.</li>
-                            <li><code>display: flex</code> y <code>gap: 8px</code> traducen directamente el <em>Auto Layout</em> de Figma.</li>
+                            <li>Se aplica a cada etiqueta (<code>&lt;li&gt;</code>) dentro del contenedor padre.</li>
+
                         </ul>
                     </div>
                 </div>
@@ -112,7 +123,7 @@
                     <img src="images/tarjeta-producto.png" class="slide-img"
                         alt="Tarjeta del producto Croissant con imagen, precio y botón de añadir al carrito" />
                     <div class="container-img-info">
-                        <p>Componente tarjeta de producto</p>
+                        <p>Component Product Card</p>
                     </div>
                 </div>
             </div>
