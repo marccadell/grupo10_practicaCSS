@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide 8 - De Figma a CSS | TecnoCafé</title>
-    <meta name="description" content="Traducción de la tipografía y paleta de colores de Figma a variables CSS en TecnoCafé.">
+    <title>De Figma a CSS | TecnoCafé</title>
+    <meta name="description"
+        content="Traducción de la tipografía y paleta de colores de Figma a variables CSS en TecnoCafé.">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -78,36 +79,46 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="pb-3">
-                    <p><strong>Traducción de estilos en CSS:</strong> replicamos el sistema de Figma mediante variables en <code>:root</code> para mantener coherencia en toda la web.</p>
-                    <pre class="p-3 bg-light border rounded"><code>:root {
-  --color-primario: #8E442D;    /* Marrón café: botones y activos */
-  --color-fondo: #FFFFFF;       /* Fondo limpio minimalista */
-  --color-secundario: #F7F4F0;  /* Crema suave: bloques y selectores */
-  --color-texto: #1A1A1A;       /* Alto contraste para lectura */
-  --color-error: #E55B51;       /* Alerta: horario no disponible */
-  --color-exito: #4CAF50;       /* Confirmación de pedido */
-  --fuente-base: 'Inter', Arial, sans-serif;
-}
+                    <h4>Traducción de estilos en CSS:</h4>
+                    <p>Replicamos el sistema de Figma mediante variables
+                        en <code>:root</code> para mantener coherencia en toda la web</p>
+                    <pre class="code-example">
+                        <code>
+    :root {
+        --color-primario: #8E442D;    /* Marrón café: botones y activos */
+        --color-fondo: #FFFFFF;       /* Fondo limpio minimalista */
+        --color-secundario: #F7F4F0;  /* Crema suave: bloques y selectores */
+        --color-texto: #1A1A1A;       /* Alto contraste para lectura */
+        --color-error: #E55B51;       /* Alerta: horario no disponible */
+        --color-exito: #4CAF50;       /* Confirmación de pedido */
+        --fuente-base: 'Inter', Arial, sans-serif;
+    }
 
-body {
-  font-family: var(--fuente-base);
-  background-color: var(--color-fondo);
-  color: var(--color-texto);
-}</code></pre>
+    body {
+        font-family: var(--fuente-base);
+        background-color: var(--color-fondo);
+        color: var(--color-texto);
+    }
+                        </code>
+                    </pre>
                 </div>
                 <div class="row row-2">
                     <div class="col-md-6">
-                        <h5><strong>Tipografía</strong></h5>
+                        <h4>Tipografía</h4>
                         <ul>
-                            <li><strong>Fuente sans-serif (Inter):</strong> elegida por su alta legibilidad en pantallas móviles y en proyector.</li>
-                            <li><strong>Jerarquía clara:</strong> contraste de pesos y tamaños para destacar títulos, precios y acciones principales.</li>
+                            <li><strong>Fuente sans-serif (Inter):</strong> elegida por su alta legibilidad en pantallas
+                                móviles y en proyector.</li>
+                            <li><strong>Jerarquía clara:</strong> contraste de pesos y tamaños para destacar títulos,
+                                precios y acciones principales.</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h5><strong>Paleta de colores</strong></h5>
+                        <h4>Paleta de colores</h4>
                         <ul>
-                            <li><strong>Identidad y minimalismo:</strong> marrón café (<code>#8E442D</code>) para los CTA sobre fondos neutros (<code>#FFFFFF</code> y <code>#F7F4F0</code>).</li>
-                            <li><strong>Colores semánticos:</strong> verde para confirmar el pedido y rojo para avisar de errores de horario.</li>
+                            <li><strong>Identidad y minimalismo:</strong> marrón café (<code>#8E442D</code>) para los
+                                CTA sobre fondos neutros (<code>#FFFFFF</code> y <code>#F7F4F0</code>).</li>
+                            <li><strong>Colores semánticos:</strong> verde para confirmar el pedido y rojo para avisar
+                                de errores de horario.</li>
                         </ul>
                     </div>
                 </div>
